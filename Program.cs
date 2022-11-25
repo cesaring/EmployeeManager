@@ -9,8 +9,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-//builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer("data source = localhost; initial catalog=Northwind; user=sa; password=Aguila!!01"));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer("data source = localhost; initial catalog=Northwind; user=sa; password=Aguila!!01"));
 builder.Services.AddDbContext<AppIdentityDbContext>(OptionsBuilderConfigurationExtensions => OptionsBuilderConfigurationExtensions.UseSqlServer("data source = localhost; initial catalog=Northwind; user=sa; password=Aguila!!01"));
+builder.Services.AddIdentity<AppIdentityUser, AppIdentityRole>()
+    .AddEntityFrameworkStores<AppIdentityDbContext>();
+builder.Services.ConfigureApplicationCookie(opt => {
+    opt.LoginPath = "/Security/SignIn";
+    opt.AccessDeniedPath = "/Security/AccessDenied";
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -26,6 +34,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

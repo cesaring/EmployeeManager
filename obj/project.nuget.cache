@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Nt0mHi5FCcMvDUg4N0FXtwrbi9op8rG7jjrbwGxByWeO+/Bj+rdZ4y/XtzwmyFB7ZGhjI4bvcH9y/qoJwTos3g==",
+  "dgSpecHash": "RVC6mRtFG+8VyF8NIqp1vJc19Kss3wRiOEQcM/BjMmQL/bRprtRWf3LTkdeQHAxwBedUl8Bsm+KcghBYLZDZcg==",
   "success": true,
   "projectFilePath": "/home/cesar/Documents/dotnetprojs/begdbprog/EmployeeManager/EmployeeManager.csproj",
   "expectedPackageFiles": [
-    "/home/cesar/.nuget/packages/humanizer.core/2.2.0/humanizer.core.2.2.0.nupkg.sha512",
+    "/home/cesar/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/cesar/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/home/cesar/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
     "/home/cesar/.nuget/packages/messagepackanalyzer/2.1.152/messagepackanalyzer.2.1.152.nupkg.sha512",
@@ -38,6 +38,7 @@
     "/home/cesar/.nuget/packages/microsoft.entityframeworkcore/6.0.11/microsoft.entityframeworkcore.6.0.11.nupkg.sha512",
     "/home/cesar/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.11/microsoft.entityframeworkcore.abstractions.6.0.11.nupkg.sha512",
     "/home/cesar/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.11/microsoft.entityframeworkcore.analyzers.6.0.11.nupkg.sha512",
+    "/home/cesar/.nuget/packages/microsoft.entityframeworkcore.design/6.0.11/microsoft.entityframeworkcore.design.6.0.11.nupkg.sha512",
     "/home/cesar/.nuget/packages/microsoft.entityframeworkcore.relational/6.0.11/microsoft.entityframeworkcore.relational.6.0.11.nupkg.sha512",
     "/home/cesar/.nuget/packages/microsoft.entityframeworkcore.sqlserver/6.0.11/microsoft.entityframeworkcore.sqlserver.6.0.11.nupkg.sha512",
     "/home/cesar/.nuget/packages/microsoft.extensions.caching.abstractions/6.0.0/microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
