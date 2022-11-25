@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/cesar/Documents/dotnetprojs/begdbprog/EmployeeManager/EmployeeManager.csproj": {}
+  },
+  "projects": {
+    "/home/cesar/Documents/dotnetprojs/begdbprog/EmployeeManager/EmployeeManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/cesar/Documents/dotnetprojs/begdbprog/EmployeeManager/EmployeeManager.csproj",
+        "projectName": "EmployeeManager",
+        "projectPath": "/home/cesar/Documents/dotnetprojs/begdbprog/EmployeeManager/EmployeeManager.csproj",
+        "packagesPath": "/home/cesar/.nuget/packages/",
+        "outputPath": "/home/cesar/Documents/dotnetprojs/begdbprog/EmployeeManager/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/cesar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.2-mauipre.1.22102.15, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.2-mauipre.1.22102.15, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/dotnet6-6.0.110/sdk/6.0.110/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

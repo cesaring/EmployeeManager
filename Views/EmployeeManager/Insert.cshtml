@@ -1,0 +1,123 @@
+@model EmployeeManager.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Insert</title>
+</head>
+<body>
+
+<h4>Employee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Insert">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <table>
+               
+            
+                <tr>
+                    <div class="form-group">
+                    <td>
+                        <label asp-for="FirstName" class="control-label"></label>
+                    </td>
+                    <td>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form-group">
+                    <td>
+                        <label asp-for="LastName" class="control-label"></label>
+                    </td>
+                    <td>
+                    <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form-group">
+                    <td>
+                        <label asp-for="Title" class="control-label"></label>
+                    </td>
+                    <td>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </td>
+                    </div>
+                </tr>
+                <tr>                    
+                    <div class="form-group">
+                    <td>
+                        <label asp-for="BirthDate" class="control-label"></label>
+                    </td>
+                    <td>
+                        <input asp-for="BirthDate" class="form-control" />
+                        <span asp-validation-for="BirthDate" class="text-danger"></span>
+                    </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form-group">
+                    <td>
+                        <label asp-for="HireDate" class="control-label"></label>
+                    </td>
+                    <td>
+                        <input asp-for="HireDate" class="form-control" />
+                        <span asp-validation-for="HireDate" class="text-danger"></span>
+                    </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form-group">
+                    <td>
+                        <label asp-for="Country" class="control-label"></label>
+                    </td>
+                    <td>
+                        <select asp-for="Country" asp-items="ViewBag.Countries">
+                        <option value="">Please select</option>
+                        </select>
+                        <span asp-validation-for="Country" class="text-danger"></span>
+                    </td>
+                    </div>
+                </tr>
+                <tr>    
+                    <div class="form-group">
+                    <td>
+                        <label asp-for="Notes" class="control-label"></label>
+                    </td>
+                    <td>
+                        <input asp-for="Notes" class="form-control" />
+                        <span asp-validation-for="Notes" class="text-danger"></span>
+                    </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form-group">
+                    <td>
+                    </td>
+                    <td>
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </td>
+                    </div>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="List">Back to List</a>
+</div>
+
+</body>
+</html>
