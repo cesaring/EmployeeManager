@@ -21,6 +21,15 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - Home - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <br />
+            <hr />
+            @if(User.Identity.IsAuthenticated) {
+                <h2> You are signed in as 2User.Identity.Name</h2>
+                <form asp-controller="Security" asp-action="SignOut" method = "post">
+                    <button type ="submit">SIgn Out</button>
+                </form>
+
+            }
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
