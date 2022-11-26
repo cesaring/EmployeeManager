@@ -87,13 +87,13 @@ namespace EmployeeManager.Controllers
             return View(obj);
         }
 
-       /* 
+
         [HttpPost]
         public IActionResult SignOut(){
-            return View();
+            signInManager.SignOutAsync().Wait();
+            return RedirectToAction("SignIn", "Security");
             
         }
-*/
 
 
 

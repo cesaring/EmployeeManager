@@ -1,9 +1,11 @@
 using EmployeeManager.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EmployeeManager.Controllers
 {
+    [Authorize(Roles = "Manager")]
     public class EmployeeManagerController: Controller
     {
         private AppDbContext? db = null;
@@ -18,6 +20,7 @@ namespace EmployeeManager.Controllers
             ViewBag.Countries = countries;
         }
 
+        [Authorize(Roles="Manager")]
         public IActionResult List() {
             List<Employee> model = (from e in db.Employees orderby e.EmployeeID select e).ToList();
             Console.WriteLine(model);
