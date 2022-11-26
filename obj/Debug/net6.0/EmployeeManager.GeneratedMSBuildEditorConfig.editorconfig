@@ -47,6 +47,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/cesar/Documents/dotnetprojs/begdbprog/EmployeeManager/Views/Security/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cesar/Documents/dotnetprojs/begdbprog/EmployeeManager/Views/Security/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvU2lnbkluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/cesar/Documents/dotnetprojs/begdbprog/EmployeeManager/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
